@@ -1,0 +1,76 @@
+﻿@model ActionResults.Models.Character
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="~/Style/homeStyles.css" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <nav>
+            <ul>
+                <li><a href="~/Home/Plain">Plain Text</a></li>
+                <li><a href="~/Home/XML">XML</a></li>
+                <li><a href="~/Home/JSON">JSON</a></li>
+                <li><a href="~/Home/Error">Error</a></li>
+                <li><a href="~/Home/Download">Download!</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+       <table class="charaTable">
+           <tr>
+               <td>Name:</td>
+               <td><strong>@Model.Name</strong></td>
+           </tr>
+           <tr>
+               <td>Level:</td>
+               <td>@Model.Level</td>
+           </tr>
+           <tr>
+               <td>Health Points:</td>
+               <td>@Model.HealthPoints</td>
+           </tr>
+           <tr>
+               <td>IQ:</td>
+               <td>@Model.Attributes["IQ"]</td>
+           </tr>
+           <tr>
+               <td>ME:</td>
+               <td>@Model.Attributes["ME"]</td>
+           </tr>
+           <tr>
+               <td>MA:</td>
+               <td>@Model.Attributes["MA"]</td>
+           </tr>
+           <tr>
+               <td>PS:</td>
+               <td>@Model.Attributes["PS"]</td>
+           </tr>
+           <tr>
+               <td>PP:</td>
+               <td>@Model.Attributes["PP"]</td>
+           </tr>
+           <tr>
+               <td>PE:</td>
+               <td>@Model.Attributes["PE"]</td>
+           </tr>
+           <tr>
+               <td>Pb:</td>
+               <td>@Model.Attributes["Pb"]</td>
+           </tr>
+           <tr>
+               <td>Spd:</td>
+               <td>@Model.Attributes["Spd"]</td>
+           </tr>
+       </table>
+    </div>
+</body>
+</html>

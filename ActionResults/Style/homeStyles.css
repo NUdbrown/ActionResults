@@ -1,0 +1,42 @@
+﻿body {
+    background: url(../Images/sims4background.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+    margin: 0 auto;
+}
+nav{
+    border: 5px double green;
+    color: white;
+    margin: 0 auto;
+    
+}
+nav li{
+    margin: 0 auto;
+    text-decoration: underline;
+    text-align: center;
+    display: inline-block;
+    padding-left: 10px;
+}
+nav li a{
+    margin: 0 auto;
+    font-size: 30px;
+}
+nav li a:hover{
+    color:aquamarine;
+}
+.charaTable{
+    border: 3px inset yellow;
+    color: white;
+    font-size: 25px;
+    border-collapse: separate;
+    width: 50%;
+    table-layout: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+   
+}
+table tr td{
+    text-align: center;
+    border: 1px solid yellow;
+}
